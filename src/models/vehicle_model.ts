@@ -1,4 +1,4 @@
-export class VehicleDTO {
+export class Vehicle {
     vehicleId: string;
     category: string;
     numberPlate: string;

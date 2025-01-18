@@ -1,4 +1,4 @@
-export class FieldStaffDTO {
+export class FieldStaff {
     fieldStaffId: string;
     fieldId: string;
     staffId: string;

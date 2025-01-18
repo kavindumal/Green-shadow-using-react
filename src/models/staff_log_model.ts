@@ -1,4 +1,4 @@
-export class StaffLogDTO {
+export class StaffLog {
     staffLogId: string;
     staffId: string;
     logId: string;

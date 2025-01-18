@@ -1,4 +1,4 @@
-export class StaffDTO {
+export class Staff {
     staffId: string;
     firstName: string;
     lastName: string;

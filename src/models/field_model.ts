@@ -1,4 +1,4 @@
-export class FieldDTO {
+export class Field {
     fieldId: string;
     fieldName: string;
     location: { x: number; y: number };

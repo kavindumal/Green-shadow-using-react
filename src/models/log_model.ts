@@ -1,4 +1,4 @@
-export class LogDTO {
+export class Log {
     logId: string;
     date: Date;
     details: string;

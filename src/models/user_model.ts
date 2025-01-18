@@ -1,4 +1,4 @@
-export class UserDTO {
+export class User {
     email: string;
     password: string;
     role: Role;

@@ -1,4 +1,4 @@
-export class CropDTO {
+export class Crop {
     cropId: string;
     commonName: string;
     scientificName: string;

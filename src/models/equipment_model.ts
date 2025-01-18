@@ -1,4 +1,4 @@
-export class EquipmentDTO {
+export class Equipment {
     equipmentId: string;
     category: string;
     type: string;

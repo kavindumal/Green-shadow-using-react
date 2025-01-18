@@ -1,4 +1,4 @@
-export class FieldCropDTO {
+export class FieldCrop {
     fieldCropId: string;
     cropId: string;
     fieldId: string;
