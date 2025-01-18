@@ -1,14 +1,28 @@
+import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { UserContext } from '../store/user_provider';
 
 export function LoginPage() {
     const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const userContext = useContext(UserContext);
+
+    if (!userContext) {
+        throw new Error('UserContext must be used within a UserProvider');
+    }
+
+    const [users] = userContext;
 
     function handleLogin() {
-        console.log('Logged in with', { username, password });
-        navigate('/dashboard');
+        const user = users.find(user => user.email === username && user.password === password);
+        if (user) {
+            alert('Successfully logged in');
+            console.log('Logged in with', { username, password });
+            navigate('/dashboard');
+        } else {
+            alert('Invalid username or password');
+        }
     }
 
     return (
